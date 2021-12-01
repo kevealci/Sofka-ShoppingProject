@@ -1,9 +1,16 @@
-import React from 'react'
-import { InformationCard } from './pages/InformationCard.jsx'
+
+import HomePage from './pages/HomePage';
+import {ProductProvider} from './components/ProviderTest'
+import {ShoppingProvider} from './components/ShoppingProvider'
+
 
 function App() {
   return (
-          <InformationCard />
+    <>
+      <ShoppingProvider>
+         <HomePage />
+      </ShoppingProvider>
+    </>
   );
 }
 

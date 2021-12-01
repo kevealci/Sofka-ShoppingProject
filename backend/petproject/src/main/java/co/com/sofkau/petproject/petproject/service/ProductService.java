@@ -33,9 +33,12 @@ public class ProductService {
     }
 
 
-    public ResponseEntity<Product> getByProductCode(String codeProduct) {
+    public ResponseEntity<Product> getByProductCode(Long codeProduct) {
         try {
+            System.out.println("service");
+            System.out.println(codeProduct);
             Optional<Product> product = productRepository.findByProductCode(codeProduct);
+            System.out.println(product);
             if (product.isPresent()) {
                 return new ResponseEntity<Product>(product.get(), HttpStatus.OK);
             }
@@ -57,7 +60,7 @@ public class ProductService {
     }
 
 
-    public boolean deleteByProductCode(String code) {
+    public boolean deleteByProductCode(Long code) {
         ResponseEntity<Product> aux = getByProductCode(code);
         if (aux.getStatusCodeValue() != 200) {
             return false;

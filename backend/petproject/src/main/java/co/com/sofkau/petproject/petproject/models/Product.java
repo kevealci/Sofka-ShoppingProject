@@ -10,6 +10,17 @@ public class Product {
     @Id
     private String id;
 
+    @Override
+    public String toString() {
+        return "Product{" +
+                "id='" + id + '\'' +
+                ", productCode=" + productCode +
+                ", name='" + name + '\'' +
+                ", price=" + price +
+                ", description='" + description + '\'' +
+                '}';
+    }
+
     @Indexed(unique=true)
     private Long productCode;
 

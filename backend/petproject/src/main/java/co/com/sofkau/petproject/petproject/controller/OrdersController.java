@@ -26,7 +26,7 @@ public class OrdersController {
     }
 
     @GetMapping(value = "/{code}")
-    public ResponseEntity<Orders> getByCode(@PathVariable("{code}") String code) {
+    public ResponseEntity<Orders> getByCode(@PathVariable("code") String code) {
         return orderService.getByCodeOrder(code);
     }
 
@@ -36,12 +36,12 @@ public class OrdersController {
     }
 
     @PutMapping(value = "/{code}")
-    public boolean updateByCodeOrder(@PathVariable("{code}") String code, @RequestBody Orders order){
+    public boolean updateByCodeOrder(@PathVariable("code") String code, @RequestBody Orders order){
         return orderService.updateByCodeOrder(code, order);
     }
 
     @DeleteMapping(value = "/{code}")
-    public boolean deleteByCodeOrder(@PathVariable("{code}") String code){
+    public boolean deleteByCodeOrder(@PathVariable("code") String code){
         return orderService.deleteByCodeOrder(code);
     }
 }

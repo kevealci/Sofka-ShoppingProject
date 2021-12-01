@@ -47,4 +47,13 @@ public class Orders {
         CodeOrder = codeOrder;
         this.orderList = orderList;
     }
+
+    @Override
+    public String toString() {
+        return "Orders{" +
+                "id='" + id + '\'' +
+                ", CodeOrder=" + CodeOrder +
+                ", orderList=" + orderList +
+                '}';
+    }
 }

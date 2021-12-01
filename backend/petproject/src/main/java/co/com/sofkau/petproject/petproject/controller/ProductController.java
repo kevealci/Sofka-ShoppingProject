@@ -25,8 +25,9 @@ public class ProductController {
         return productService.getAll();
     }
 
-    @GetMapping(value = "/{code}")
-    public ResponseEntity<Product> getByCode(@PathVariable("{code}") String code) {
+    @GetMapping("/{code}")
+    public ResponseEntity<Product> getByCode(@PathVariable("code") Long code) {
+        System.out.println("code = " + code);
         return productService.getByProductCode(code);
     }
 
@@ -38,7 +39,7 @@ public class ProductController {
 
 
     @DeleteMapping(value = "/{code}")
-    public boolean deleteByCodeOrder(@PathVariable("{code}") String code){
+    public boolean deleteByCodeOrder(@PathVariable("code") Long code){
         return productService.deleteByProductCode(code);
     }
 }

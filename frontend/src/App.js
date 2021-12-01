@@ -5,7 +5,12 @@ function App() {
   return (
     <div className="container">
       <Navbar/>
-      <div className="row mt-4">
+      <div className="row mt-4 align-items-end">
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
         <Card />
         <Card />
         <Card />

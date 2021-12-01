@@ -1,8 +1,6 @@
 import { Cart } from "../components/Cart"
 import { InputUsername } from "../components/InputUsername"
 
-
-
 export const ShoppingCart = () => {
   return (
     <>

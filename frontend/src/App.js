@@ -1,11 +1,14 @@
 import { NavBar } from './components/NavBar.jsx';
 import { ShoppingCart } from './Pages/ShoppingCart.jsx';
+import { ShoppingProvider } from './components/ShoppingProvider';
 
 function App() {
   return (
     <>
-      <NavBar />
-      <ShoppingCart />
+      <ShoppingProvider>
+        <NavBar />
+        <ShoppingCart />
+      </ShoppingProvider>
     </>
   );
 }

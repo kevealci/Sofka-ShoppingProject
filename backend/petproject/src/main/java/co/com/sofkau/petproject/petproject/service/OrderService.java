@@ -46,6 +46,19 @@ public class OrderService {
     }
 
 
+    public ResponseEntity<List<Orders>> getByUserName(String userName) {
+        try {
+           List<Orders> order = orderRepository.findByUserName(userName);
+            if (order.size()>0) {
+                return new ResponseEntity<List<Orders>>(order, HttpStatus.OK);
+            }
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        } catch (Exception e) {
+            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+
+
     public ResponseEntity<Orders> save(Orders order) {
         try {
             orderRepository.save(order);

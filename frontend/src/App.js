@@ -1,8 +1,16 @@
 import HomePage from './pages/HomePage';
-
+import {ProductProvider} from './components/ProviderTest'
 function App() {
   return (
-   <HomePage/>
+    <>
+      <ProductProvider>
+        nav
+        rutas
+
+
+        <HomePage />
+      </ProductProvider>
+    </>
   );
 }
 

@@ -15,8 +15,8 @@ public class Orders {
     @Indexed(unique=true)
     private Long CodeOrder;
 
+    private String userName;
     private List<Product> orderList;
-
 
 
     public String getId() {
@@ -35,6 +35,14 @@ public class Orders {
         CodeOrder = codeOrder;
     }
 
+    public String getUserName() {
+        return userName;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+
     public List<Product> getOrderList() {
         return orderList;
     }
@@ -43,17 +51,9 @@ public class Orders {
         this.orderList = orderList;
     }
 
-    public Orders(Long codeOrder, List<Product> orderList) {
+    public Orders(Long codeOrder, String userName, List<Product> orderList) {
         CodeOrder = codeOrder;
+        this.userName = userName;
         this.orderList = orderList;
-    }
-
-    @Override
-    public String toString() {
-        return "Orders{" +
-                "id='" + id + '\'' +
-                ", CodeOrder=" + CodeOrder +
-                ", orderList=" + orderList +
-                '}';
     }
 }

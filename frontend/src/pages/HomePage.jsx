@@ -1,14 +1,25 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useContext } from 'react'
+import { TYPES } from '../actions/Action'
 import Card from '../components/Card'
 import Navbar from '../components/Navbar'
 import Search from '../components/Search'
+import { contexPrueba } from '../context/contexPrueba'
+import axios from 'axios';
 
 
 const HomePage = () => {
 
-  const [lista, setLista] = useState([]);
 
-  useEffect(() => {
+
+  const [lista, setLista] = useState([]);
+  const { state, dispatch } = useContext(contexPrueba);
+
+  const pet = async () => {
+      await dispatch
+  }
+
+
+  useEffect( () => {
 
     const HOST_API = 'http://localhost:8080/api';
     fetch(HOST_API + "/product", {
@@ -18,15 +29,14 @@ const HomePage = () => {
       }
     })
       .then(response => response.json())
-      .then((todo) => {
-        setLista(todo);
-        console.log(lista)
+      .then((payload) => {
+        dispatch({ type: TYPES.SEARCH, items: payload })
+        setLista(state.product.list)
       }).catch(err => console.log(err))
-  }, []);
+    }, []);
+    
 
 
-  console.log("lista")
-  console.log(lista)
 
 
   return (
@@ -34,11 +44,12 @@ const HomePage = () => {
       <Navbar />
       <Search />
       <div className="row mt-4">
-      {
-        lista.map((item, index) =>{
-          return <Card key={index} info={item}/>
-        })
-      }
+        {
+          lista.map((item, index) => {
+            return <Card key={index} info={item} />
+          })
+        }
+       
       </div>
     </div>
   )

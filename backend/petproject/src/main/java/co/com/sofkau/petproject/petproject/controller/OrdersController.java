@@ -25,9 +25,13 @@ public class OrdersController {
         return orderService.getAllOrders();
     }
 
-    @GetMapping(value = "/{code}")
+    @GetMapping(value = "/code/{code}")
     public ResponseEntity<Orders> getByCode(@PathVariable("code") String code) {
         return orderService.getByCodeOrder(code);
+    }
+    @GetMapping(value = "/user/{user}")
+    public ResponseEntity<List<Orders>> getByUserName(@PathVariable("user") String user) {
+        return orderService.getByUserName(user);
     }
 
     @PostMapping

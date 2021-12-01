@@ -1,15 +1,14 @@
 import HomePage from './pages/HomePage';
 import {ProductProvider} from './components/ProviderTest'
+import {ShoppingProvider} from './components/ShoppingProvider'
+
+
 function App() {
   return (
     <>
-      <ProductProvider>
-        nav
-        rutas
-
-
-        <HomePage />
-      </ProductProvider>
+      <ShoppingProvider>
+         <HomePage />
+      </ShoppingProvider>
     </>
   );
 }

@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useContext } from 'react'
-import { TYPES } from '../actions/Action'
+import { TYPES } from '../actions/action'
 import Card from '../components/Card'
 import Navbar from '../components/Navbar'
 import Search from '../components/Search'

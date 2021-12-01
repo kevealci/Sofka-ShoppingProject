@@ -1,6 +1,6 @@
 import { TYPES } from '../actions/action';
 
-export const productInitialState = {
+export const shoppingInitialState = {
     product: {
         listGeneral: [],
         listaCarrito: [],
@@ -9,7 +9,8 @@ export const productInitialState = {
     }
 }
 
-export function productReducer(state, action) {
+
+export function shoppingReducer (state, action) {
     switch (action.type) {
         case TYPES.SEARCH:
             state.product.list = action.items;

@@ -4,7 +4,7 @@ import {Button} from './Button'
 export const Footer = () => {
     return (
         <>
-            <div className="card-footer text-center">
+            <div className="d-flex justify-content-evenly">
                 <div className="row">
                     <div className="col col-6">
                         <Button classes={"btn btn-success"}>Agregar</Button>

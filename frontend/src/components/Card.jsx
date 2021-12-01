@@ -5,16 +5,20 @@ import { Footer } from './Footer';
 
 export const Card = () => {
 
-    const styles = {};
-
     return (
-        <div className="row row-cols-1 row-cols-md-3 g-4">
-            <div className="col">
-                <div className="card h-100" style={styles}>
+        <div className="container-fluid">        
+            <h2 className="text-center">Nevera</h2>
+            <hr/>
+            <div className="row">
+                <div className="col-5">
                     <Header />
-                    <Body />
-                    <Footer />
                 </div>
+                <div className="col-7">
+                    <Body />
+                </div>
+            </div>
+            <div className="mt-4">
+                <Footer />
             </div>
         </div>
     )

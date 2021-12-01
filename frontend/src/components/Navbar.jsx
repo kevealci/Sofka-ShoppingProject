@@ -4,16 +4,16 @@ const Navbar = () => {
     return (
         <ul className="nav nav-pills nav-fill mt-4">
             <li className="nav-item">
-                <a className="nav-link active" href="">Active</a>
+                <a className="nav-link active" href="">Inicio</a>
             </li>
             <li className="nav-item">
-                <a className="nav-link" href="#">Much longer nav link</a>
+                <a className="nav-link" href="#">Buscar</a>
             </li>
             <li className="nav-item">
-                <a className="nav-link" href="#">Link</a>
+                <a className="nav-link" href="#">Categorias</a>
             </li>
             <li className="nav-item">
-                <a className="nav-link disabled">Disabled</a>
+                <a className="nav-link" href="#">Carrito</a>
             </li>
         </ul>
     )

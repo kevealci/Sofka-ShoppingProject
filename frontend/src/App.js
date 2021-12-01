@@ -1,22 +1,8 @@
-import Card from './components/Card';
-import Navbar from './components/Navbar';
+import HomePage from './pages/HomePage';
 
 function App() {
   return (
-    <div className="container">
-      <Navbar/>
-      <div className="row mt-4 align-items-end">
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-      </div>
-    </div>
+   <HomePage/>
   );
 }
 

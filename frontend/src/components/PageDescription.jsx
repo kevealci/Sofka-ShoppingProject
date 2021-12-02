@@ -29,7 +29,7 @@ export const PageDescription = () => {
             <hr/>
             <div className="row">
                 <div className="col-5">
-                    <Image classes={"card-img-top"} src="https://i.ibb.co/KhDGb31/img9.jpg" />
+                    <Image classes={"card-img-top"} src={itemSeleccionado.picture} />
                     <Paragraph classes={"text-center"}>Codigo: {itemSeleccionado.productCode}</Paragraph>
                 </div>                
                 <Body />

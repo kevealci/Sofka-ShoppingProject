@@ -1,7 +1,7 @@
 import React, { useState, useContext } from 'react'
 import { Link } from 'react-router-dom'
 import {shoppingContext} from '../context/shoppingContext'
-import { TYPES } from '../actions/Action'
+import { TYPES } from '../actions/actions';
 
 const Card = ({info}) => {
 

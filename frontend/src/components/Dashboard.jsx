@@ -3,7 +3,7 @@ import { useSearchParams } from 'react-router-dom';
 import { GetFetch } from '../hooks/GetFetch'
 import Card from './Card';
 import {shoppingContext} from '../context/shoppingContext'
-import { TYPES } from '../actions/Action';
+import { TYPES } from '../actions/actions';
 
 
 const Dashboard = () => {

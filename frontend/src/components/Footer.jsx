@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import { Button } from './Button'
 import {shoppingContext} from '../context/shoppingContext'
-import { TYPES } from '../actions/Action'
+import { TYPES } from '../actions/actions';
 
 export const Footer = () => {
     const {state, dispatch} = useContext(shoppingContext)

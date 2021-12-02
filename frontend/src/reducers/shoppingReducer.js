@@ -1,5 +1,4 @@
-
-import { TYPES } from '../actions/Action';
+import { TYPES } from '../actions/actions';
 
 export const shoppingInitialState = {
   listaGeneral: [],

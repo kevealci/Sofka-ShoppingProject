@@ -1,11 +1,9 @@
-import React, {useContext, useState} from 'react'
-import { shoppingContext } from '../context/shoppingContext'
-
+import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 const Card = (props) => {
-    
-    const { state } = useContext(shoppingContext);
-    let list= [];
+
+    let list = [];
     const styles = {
         width: '18rem'
     };
@@ -18,15 +16,19 @@ const Card = (props) => {
         console.log(list);
         setFlag(!flag)
     }
-    
+
 
     return (
         <div className="col mt-4">
             <div className="card" style={styles} >
-                {flag?<img src="" className="card-img-top" alt="..." hidden/> : <img src="" className="card-img-top" alt="..." />}
+                <Link className="text-decoration-none" to={`/info/${props.info.productCode}`}>
+                    {flag ? <img src="" className="card-img-top" alt="..." hidden /> : <img src="" className="card-img-top" alt="..." />}
+                </Link>
                 <ul className="list-group list-group-flush">
+                <Link className="text-decoration-none" to={`/info/${props.info.productCode}`}>
                     <li className="list-group-item">{props.info.name}</li>
                     <li className="list-group-item">{props.info.price}</li>
+                </Link>
                     <li className="btn btn-success" onClick={boton}>AGREGAR</li>
                 </ul>
             </div>

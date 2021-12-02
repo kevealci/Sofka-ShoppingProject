@@ -1,19 +1,21 @@
 import React from 'react'
 import {Paragraph} from './Paragraph.jsx'
 import {Title} from './Title.jsx'
+import {useContext} from 'react'
+import {shoppingContext} from '../context/shoppingContext'
 
 export const Body = () => {
+    const {state: {itemSeleccionado}, dispatch } = useContext(shoppingContext);
     return (
-        <>  
-                      
+        <div className="col-7">                      
             <Title>Descripción</Title>
             <Paragraph>
-                This is a wider card with supporting text below as a natural lead-in to additional content.This content is a little bit longer.
+                {itemSeleccionado.description}
             </Paragraph>
             <Title>Categoria</Title>
-            <Paragraph>Electrodomesticos</Paragraph>
+            <Paragraph>{itemSeleccionado.category}</Paragraph>
             <Title>Precio</Title>
-            <Paragraph>El valor es $1.560.000.</Paragraph>
-        </>
+            <Paragraph>{itemSeleccionado.price}</Paragraph>
+        </div>    
     )
 }

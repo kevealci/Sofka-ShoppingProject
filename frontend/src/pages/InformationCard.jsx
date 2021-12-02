@@ -1,14 +1,12 @@
 import React from 'react'
-import {Card} from '../components/Card'
-import {Navbar} from '../components/Navbar'
+import {PageDescription} from '../components/PageDescription'
 
 export const InformationCard = () => {
     return (
         <>        
-            <Navbar />
             <div className="container">
                 <div className="row mt-4 align-items-end">
-                    <Card />
+                    <PageDescription />
                 </div>
             </div>
         </>

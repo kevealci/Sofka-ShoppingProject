@@ -28,6 +28,15 @@ public class Product {
     private double price;
     private String description;
     private String category;
+    private String picture;
+
+    public String getPicture() {
+        return picture;
+    }
+
+    public void setPicture(String picture) {
+        this.picture = picture;
+    }
 
     public String getId() {
         return id;
@@ -77,11 +86,12 @@ public class Product {
         this.category = category;
     }
 
-    public Product(Long productCode, String name, double price, String description, String category) {
+    public Product(Long productCode, String name, double price, String description, String category, String picture) {
         this.productCode = productCode;
         this.name = name;
         this.price = price;
         this.description = description;
         this.category = category;
+        this.picture = picture;
     }
 }

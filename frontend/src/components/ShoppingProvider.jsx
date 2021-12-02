@@ -6,6 +6,7 @@ import {shoppingContext} from '../context/shoppingContext';
 export const ShoppingProvider = ({children}) =>{
     const[state, dispatch] = useReducer(shoppingReducer, shoppingInitialState);
 
+
     return<shoppingContext.Provider value={{state, dispatch}}>
         {children}
     </shoppingContext.Provider>

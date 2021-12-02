@@ -1,18 +1,16 @@
 import { TYPES } from '../actions/actions';
+import { data } from '../dataQuemada';
 
 export const shoppingInitialState = {
-  product: {
-    listGeneral: [],
-    listaCarrito: [],
-    itemSeleccionado: {},
-    item: {}
-  }
+  listGeneral: [],
+  listaCarrito: [...data],
+  itemSeleccionado: {},
+  item: {}
 };
 
 export function shoppingReducer(state, action) {
   switch (action.type) {
     case TYPES.SEARCH:
-      state.product.list = action.items;
       break;
     default:
       console.log(state);

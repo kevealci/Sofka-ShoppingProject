@@ -1,38 +1,27 @@
-import { TYPES } from '../actions/action';
+import {
+    TYPES
+} from '../actions/action';
 
 export const shoppingInitialState = {
-        listGeneral: [],
-        listaCarrito: [],
-        itemSeleccionado: {
-            name: "Producto 1",
-            price: 12.3,
-            productCode: 0,
-            description: "Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip",
-            category: "1",
-            picture: "https://i.ibb.co/NyS9VGh/dario-KJZ-utw-Lc0w-unsplash.jpg"
-        },
-        item: {}
+    listGeneral: [],
+    listCarrito: [],
+    itemSeleccionado: {},
+    item: {}
 }
 
 
-export function shoppingReducer (state, action) {
+export function shoppingReducer(state, action) {
     switch (action.type) {
-        case TYPES.ADD_PRODUCT:
-            const list = state.listaCarrito
-            list.push(action.payload)
-            return{
-                ...state,
-                listaCarrito: list
-            }
+        case TYPES.GET_ALL:
+            console.log('entro');
+            state.listGeneral = action.payload;
             break;
-        case TYPES.DELETE_ITEM:
-            return {
-                ...state,
-                itemSeleccionado: {}
-            };
+        case TYPES.ADD_PRODUCT:
+            console.log('add product');
+            state.listCarrito.push(action.payload);
             break;
         default:
-            console.log(state);
+            console.log('default action');
             break;
 
     }

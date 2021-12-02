@@ -1,5 +1,4 @@
-import {InformationCard} from './pages/InformationCard'
-import {Navbar} from './components/Navbar'
+import HomePage from './pages/HomePage';
 import {ShoppingProvider} from './components/ShoppingProvider'
 
 
@@ -7,8 +6,7 @@ function App() {
   return (
     <>
       <ShoppingProvider>
-        <Navbar/>      
-        <InformationCard/>
+         <HomePage />
       </ShoppingProvider>
     </>
   );

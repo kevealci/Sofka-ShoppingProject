@@ -6,8 +6,10 @@ import HomePage from './pages/HomePage'
 import InformationCard from './pages/InformationCard'
 import Kevin from './pages/Kevin'
 import NoEncontrada from './components/Noencontrado';
+import { ShoppingProvider } from './components/ShoppingProvider';
 
 ReactDOM.render(
+  <ShoppingProvider>
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<App />}>
@@ -15,10 +17,9 @@ ReactDOM.render(
         <Route path="info/:id" element={<InformationCard/>}/>
         <Route path="carrito" element={<Kevin/>}/>
         <Route path="*" element={<NoEncontrada />} />
-      </Route>
-      
+      </Route>   
     </Routes>
-  </BrowserRouter>,
-
+  </BrowserRouter>
+  </ShoppingProvider>,
   document.getElementById('root')
 );

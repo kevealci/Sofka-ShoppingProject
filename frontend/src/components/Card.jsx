@@ -1,9 +1,12 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import { Link } from 'react-router-dom'
+import {shoppingContext} from '../context/shoppingContext'
+import { TYPES } from '../actions/Action'
 
-const Card = (props) => {
+const Card = ({info}) => {
 
-    let list = [];
+    const { dispatch } = useContext(shoppingContext)
+
     const styles = {
         width: '18rem'
     };
@@ -11,23 +14,25 @@ const Card = (props) => {
     const [flag, setFlag] = useState(false)
 
     const boton = (e) => {
-        console.log(e.target);
-        list.push(props.info)
-        console.log(list);
+        dispatch({type:TYPES.ADD_PRODUCT, payload: info})
         setFlag(!flag)
     }
 
+    const setItem=() => {
+        dispatch({type:TYPES.SET_ITEM, payload: info})
+    }
 
     return (
-        <div className="col mt-4">
+        <div className="col-auto">
             <div className="card" style={styles} >
-                <Link className="text-decoration-none" to={`/info/${props.info.productCode}`}>
-                    {flag ? <img src={props.info.picture} className="card-img-top" alt="..." hidden /> : <img src={props.info.picture} className="card-img-top" alt="..." />}
+
+                <Link onClick={setItem} className="text-decoration-none" to={`/info/${info.productCode}`}>
+                    {flag ? <img src={info.picture} className="img-fluid img-thumbnail" alt="..." hidden /> : <img src={info.picture} className="img-fluid img-thumbnail" alt="..." />}
                 </Link>
                 <ul className="list-group list-group-flush">
-                <Link className="text-decoration-none" to={`/info/${props.info.productCode}`}>
-                    <li className="list-group-item">{props.info.name}</li>
-                    <li className="list-group-item">{props.info.price}</li>
+                <Link onClick={setItem} className="text-decoration-none" to={`/info/${info.productCode}`}>
+                    <li className="list-group-item">{info.name}</li>
+                    <li className="list-group-item">{info.price}</li>
                 </Link>
                     <li className="btn btn-success" onClick={boton}>AGREGAR</li>
                 </ul>

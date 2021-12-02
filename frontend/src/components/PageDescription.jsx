@@ -1,37 +1,26 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import { Image } from './Image'
-import {Body} from './Body'
+import { Body } from './Body'
 import { Footer } from './Footer';
-import {Paragraph} from './Paragraph.jsx'
-import { GetFetch } from '../hooks/GetFetch'
-import { useParams } from 'react-router'
+import { Paragraph } from './Paragraph.jsx'
+import { shoppingContext } from '../context/shoppingContext'
 
 
 export const PageDescription = () => {
-    
-    let params = useParams();
 
-    const { data, error, loading } = GetFetch(`http://localhost:8080/api/product/${params.id}`);
-
-    const itemSeleccionado = data;
-
-    if (loading) {
-        return <h1>Loading...</h1>;
-    }
-
-    if (error !== "") {
-        return <h1>{error}</h1>;
-    }
+   
+    const { state } = useContext(shoppingContext);
+    const itemSeleccionado = state.itemSeleccionado;
 
     return (
-        <div className="container-fluid">        
+        <div className="container-fluid">
             <h1 className="text-center">{itemSeleccionado.name}</h1>
-            <hr/>
+            <hr />
             <div className="row">
                 <div className="col-5">
                     <Image classes={"card-img-top"} src={itemSeleccionado.picture} />
                     <Paragraph classes={"text-center"}>Codigo: {itemSeleccionado.productCode}</Paragraph>
-                </div>                
+                </div>
                 <Body />
             </div>
             <Footer />

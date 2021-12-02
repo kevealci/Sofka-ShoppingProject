@@ -5,7 +5,7 @@ import { TYPES } from '../actions/Action'
 
 const Card = ({info}) => {
 
-    const {state, dispatch} = useContext(shoppingContext)
+    const { dispatch } = useContext(shoppingContext)
 
     const styles = {
         width: '18rem'
@@ -18,21 +18,19 @@ const Card = ({info}) => {
         setFlag(!flag)
     }
 
-        console.log(`state desde card fuera boton`, state)
+    const setItem=() => {
+        dispatch({type:TYPES.SET_ITEM, payload: info})
+    }
 
     return (
-        <div className="col mt-4">
+        <div className="col-auto">
             <div className="card" style={styles} >
-<<<<<<< HEAD
-                <Link className="text-decoration-none" to={`/info/${info.productCode}`}>
-                    {flag ? <img src="" className="card-img-top" alt="..." hidden /> : <img src="" className="card-img-top" alt="..." />}
-=======
-                <Link className="text-decoration-none" to={`/info/${props.info.productCode}`}>
-                    {flag ? <img src={props.info.picture} className="img-fluid img-thumbnail" alt="..." hidden /> : <img src={props.info.picture} className="img-fluid img-thumbnail" alt="..." />}
->>>>>>> 672edb1477d6928c425076bce0d6bf5bfb787730
+
+                <Link onClick={setItem} className="text-decoration-none" to={`/info/${info.productCode}`}>
+                    {flag ? <img src={info.picture} className="img-fluid img-thumbnail" alt="..." hidden /> : <img src={info.picture} className="img-fluid img-thumbnail" alt="..." />}
                 </Link>
                 <ul className="list-group list-group-flush">
-                <Link className="text-decoration-none" to={`/info/${info.productCode}`}>
+                <Link onClick={setItem} className="text-decoration-none" to={`/info/${info.productCode}`}>
                     <li className="list-group-item">{info.name}</li>
                     <li className="list-group-item">{info.price}</li>
                 </Link>

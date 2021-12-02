@@ -16,6 +16,8 @@ export function shoppingReducer(state, action) {
       return { ...state, listaCarrito: [...state.listaCarrito, action.payload] };
     case TYPES.CANCEL_ORDER:
       break;
+      case TYPES.SET_ITEM:
+        return { ...state, itemSeleccionado: action.payload}
     default:
       break;
   }

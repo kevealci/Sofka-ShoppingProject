@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 import React, {useContext } from 'react'
-=======
-import React from 'react'
->>>>>>> 672edb1477d6928c425076bce0d6bf5bfb787730
 import { useSearchParams } from 'react-router-dom';
 import {shoppingContext} from '../context/shoppingContext'
 

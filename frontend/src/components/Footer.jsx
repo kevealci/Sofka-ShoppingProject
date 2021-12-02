@@ -1,18 +1,12 @@
 import React from 'react'
-import {Button} from './Button'
-import {TYPES} from '../actions/action'
-import {useContext} from 'react'
-import {shoppingContext} from '../context/shoppingContext'
+import { Link } from 'react-router-dom'
+import { Button } from './Button'
 
 export const Footer = () => {
-    const {state, dispatch } = useContext(shoppingContext);
-    const comeback = () => {
-        dispatch({type: TYPES.DELETE_ITEM})
-    console.log(state)
-    }
+
     const addProduct = () => {
-        dispatch({type: TYPES.ADD_PRODUCT, payload: state.itemSeleccionado})
-    console.log(state)
+        // dispatch({type: TYPES.ADD_PRODUCT, payload: state.itemSeleccionado})
+        console.log("state")
     }
     return (
         <div className="mt-4">
@@ -22,9 +16,11 @@ export const Footer = () => {
                         <Button classes={"btn btn-success"} onClick={addProduct}>Agregar</Button>
                     </div>
                     <div className="col col-6">
-                        <Button classes={"btn btn-primary"} onClick={comeback}>Regresar</Button>
+                        <Link to="/">
+                            <Button classes={"btn btn-primary"}>Regresar</Button>
+                        </Link>
                     </div>
-                </div>               
+                </div>
             </div>
         </div>
     )

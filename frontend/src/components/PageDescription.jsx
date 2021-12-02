@@ -3,12 +3,27 @@ import { Image } from './Image'
 import {Body} from './Body'
 import { Footer } from './Footer';
 import {Paragraph} from './Paragraph.jsx'
-import {Title} from './Title.jsx'
-import {shoppingContext} from '../context/shoppingContext'
-import {useContext} from 'react'
+import { GetFetch } from '../hooks/GetFetch'
+import { useParams } from 'react-router'
+
 
 export const PageDescription = () => {
-    const {state: {itemSeleccionado}, dispatch } = useContext(shoppingContext);
+    
+    let params = useParams();
+
+    const { data, error, loading } = GetFetch(`http://localhost:8080/api/product/${params.id}`);
+
+    const itemSeleccionado = data;
+
+    if (loading) {
+        return <h1>Loading...</h1>;
+    }
+
+    if (error !== "") {
+        return <h1>{error}</h1>;
+    }
+
+
     return (
         <div className="container-fluid">        
             <h1 className="text-center">{itemSeleccionado.name}</h1>

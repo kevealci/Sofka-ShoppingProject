@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useContext } from 'react'
+import React, { useEffect } from 'react'
 import { useSearchParams } from 'react-router-dom';
 import { GetFetch } from '../hooks/GetFetch'
 import Card from './Card';
@@ -7,8 +7,7 @@ import Card from './Card';
 
 const Dashboard = () => {
 
-  let [searchParams, setSearchParams] = useSearchParams();
-  // const { data, error, loading } = GetFetch('https://jsonplaceholder.typicode.com/todos');
+  let [searchParams] = useSearchParams();
   const { data, error, loading } = GetFetch('http://localhost:8080/api/product');
 
   useEffect(() => {

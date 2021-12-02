@@ -12,3 +12,5 @@ export const InformationCard = () => {
         </>
     )
 }
+
+export default InformationCard;

@@ -5,7 +5,6 @@ export const Jennifer = () => {
 
     let params = useParams();
 
-    // const { data, error, loading } = GetFetch(`https://jsonplaceholder.typicode.com/todos/${params.id}`);
     const { data, error, loading } = GetFetch(`http://localhost:8080/api/product/${params.id}`);
 
 

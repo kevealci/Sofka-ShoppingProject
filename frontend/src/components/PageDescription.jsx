@@ -23,14 +23,13 @@ export const PageDescription = () => {
         return <h1>{error}</h1>;
     }
 
-
     return (
         <div className="container-fluid">        
             <h1 className="text-center">{itemSeleccionado.name}</h1>
             <hr/>
             <div className="row">
                 <div className="col-5">
-                    <Image classes={"card-img-top"} src={itemSeleccionado.picture} />
+                    <Image classes={"card-img-top"} src="https://i.ibb.co/KhDGb31/img9.jpg" />
                     <Paragraph classes={"text-center"}>Codigo: {itemSeleccionado.productCode}</Paragraph>
                 </div>                
                 <Body />

@@ -1,12 +1,14 @@
 [
 
+
     {
         "name": "Producto 1",
         "price": 12.3,
         "productCode": 0,
         "description": "Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip",
         "category": "1",
-        "picture": ""
+        "picture": "https://ibb.co/dbbtJpS"
+
 
     },
     {
@@ -14,55 +16,63 @@
         "price": 123,
         "productCode": 1,
         "description": "Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip",
-        "category": "4"
+        "category": "4",
+        "picture": " https://ibb.co/mChd2dn"
     },
     {
         "name": "Producto 3",
         "price": 2.3,
         "productCode": 2,
         "description": "Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip",
-        "category": "mar"
+        "category": "mar",
+        "picture": "https://ibb.co/fQZpKyy"
     },
     {
         "name": "Producto 4",
         "price": 1.39,
         "productCode": 3,
         "description": "Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip",
-        "category": "asd"
+        "category": "asd",
+        "picture": "https://ibb.co/Dthg0T4"
     },
     {
         "name": "Producto 5",
         "price": 22.3,
         "productCode": 4,
         "description": "Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip",
-        "category": "fds"
+        "category": "fds",
+        "picture": "https://ibb.co/FhG2LFn"
     },
     {
         "name": "Producto 6",
         "price": 72.9,
         "productCode": 5,
         "description": "Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip",
-        "category": "1"
+        "category": "1",
+        "picture": "https://ibb.co/L5wM6rG"
     },
     {
         "name": "Producto 7",
         "price": 92.1,
         "productCode": 6,
         "description": "Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip",
-        "category": "1"
+        "category": "1",
+        "picture": "https://ibb.co/tYfZSxf"
     },
     {
         "name": "Producto 8",
         "price": 8.3,
         "productCode": 7,
         "description": "Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip",
-        "category": "1"
+        "category": "1",
+        "picture": "https://ibb.co/s9DpQB0"
     },
     {
         "name": "Producto 9",
         "price": 63.5,
         "productCode": 8,
         "description": "Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip",
-        "category": "1"
+        "category": "1",
+        "picture": "https://ibb.co/KhDGb31"
     }
 ]

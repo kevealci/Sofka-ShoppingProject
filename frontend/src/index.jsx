@@ -13,7 +13,7 @@ ReactDOM.render(
     <Routes>
       <Route path="/" element={<App />}>
         <Route index element={<HomePage />}/>
-        <Route path="info/:id" element={<InformationCard/>}/>
+        <Route path="info" element={<InformationCard/>}/>
         <Route path="carrito" element={<ShoppingCart/>}/>
         <Route path="*" element={<NoEncontrada />} />
       </Route>   

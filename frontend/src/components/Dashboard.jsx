@@ -14,12 +14,11 @@ const Dashboard = () => {
   const { data, error, loading } = GetFetch('http://localhost:8080/api/product');
 
   useEffect(() => {
-    console.log(searchParams.get("filter"));
   }, [searchParams]);
 
   useEffect(() => {
     dispatch({type:TYPES.GET_ALL, payload:data})
-  }, [data])
+  }, [data, dispatch]);
 
   if (loading) {
     return <h1>Loading...</h1>;
@@ -29,16 +28,12 @@ const Dashboard = () => {
     return <h1>{error}</h1>;
   }
 
-  console.log(`data`, data)
-  
-  console.log(`state dashboard`, state)
 
 
   return (
     <div className="row">
       {
-//data
-        state.listaGeneral.filter(item => {
+        state?.listaGeneral?.filter(item => {
           let tt = item.name.toLowerCase();
           let ff = searchParams.get("filter");
           if (!ff) return true;

@@ -1,24 +1,11 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import {Paragraph} from './Paragraph.jsx'
 import {Title} from './Title.jsx'
-import { GetFetch } from '../hooks/GetFetch'
-import { useParams } from 'react-router'
+import {shoppingContext} from '../context/shoppingContext'
 
 export const Body = () => {
-        let params = useParams();
-    
-        const { data, error, loading } = GetFetch(`http://localhost:8080/api/product/${params.id}`);
-    
-        const itemSeleccionado = data;
-    
-        if (loading) {
-            return <h1>Loading...</h1>;
-        }
-    
-        if (error !== "") {
-            return <h1>{error}</h1>;
-        }
-    
+        
+    const {state: {itemSeleccionado}} = useContext(shoppingContext);
 
     return (
         <div className="col-7">                      

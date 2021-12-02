@@ -9,8 +9,6 @@ export const Footer = () => {
 
     const addProduct = (e) => {
         dispatch({type:TYPES.ADD_PRODUCT, payload: state.itemSeleccionado})
-        console.log("state.itemSeleccionado");
-        console.log(state.itemSeleccionado);
     }
     return (
         <div className="mt-4">

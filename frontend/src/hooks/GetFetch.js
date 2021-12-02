@@ -10,7 +10,6 @@ export const GetFetch = (url) => {
         fetch(url)
             .then((res) => res.json())
             .then((data) => {
-                console.log(data);
                 setData(data)})
             .catch((e) => setError("Ocurrió un error"))
             .finally(() => setLoading(false));

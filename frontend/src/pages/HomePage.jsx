@@ -1,56 +1,44 @@
 import React, { useEffect, useState, useContext } from 'react'
 import { TYPES } from '../actions/action'
 import Card from '../components/Card'
-import Navbar from '../components/Navbar'
 import Search from '../components/Search'
-import { contexPrueba } from '../context/contexPrueba'
+import { shoppingContext } from '../context/shoppingContext'
 import axios from 'axios';
+import Otro from '../components/Otro'
 
 
 const HomePage = () => {
 
+  // const [lista, setLista] = useState([]);
+  // const { state, dispatch } = useContext(shoppingContext);
+  // const HOST_API = 'http://localhost:8080/api';
 
+  // const pet = async () => {
+  //   const datos = await axios.get(HOST_API + '/product');
 
-  const [lista, setLista] = useState([]);
-  const { state, dispatch } = useContext(contexPrueba);
-
-  const pet = async () => {
-      await dispatch
-  }
-
-
-  useEffect( () => {
-
-    const HOST_API = 'http://localhost:8080/api';
-    fetch(HOST_API + "/product", {
-      method: "GET",
-      headers: {
-        'Content-Type': 'application/json'
-      }
-    })
-      .then(response => response.json())
-      .then((payload) => {
-        dispatch({ type: TYPES.SEARCH, items: payload })
-        setLista(state.product.list)
-      }).catch(err => console.log(err))
-    }, []);
+  //   console.log(datos.data);
     
+  //    dispatch({
+  //     type: TYPES.GET_ALL,
+  //     payload: datos.data
+  //   })
+  //   setLista(state.listGeneral);
+  // }
 
+  // useEffect(() => {
+  //   console.log(state.listGeneral)
+  //   pet();
+  //   console.log(state.listGeneral)
+
+  // }, [HomePage])
 
 
 
   return (
     <div className="container">
-      <Navbar />
+      {/* <Search lista={lista} /> */}
       <Search />
-      <div className="row mt-4">
-        {
-          lista.map((item, index) => {
-            return <Card key={index} info={item} />
-          })
-        }
-       
-      </div>
+      <Otro/>
     </div>
   )
 }

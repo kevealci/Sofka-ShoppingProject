@@ -1,22 +1,27 @@
-import { TYPES } from '../actions/action';
+import {
+    TYPES
+} from '../actions/action';
 
 export const shoppingInitialState = {
-    product: {
-        listGeneral: [],
-        listaCarrito: [],
-        itemSeleccionado: {},
-        item: {}
-    }
+    listGeneral: [],
+    listCarrito: [],
+    itemSeleccionado: {},
+    item: {}
 }
 
 
-export function shoppingReducer (state, action) {
+export function shoppingReducer(state, action) {
     switch (action.type) {
-        case TYPES.SEARCH:
-            state.product.list = action.items;
+        case TYPES.GET_ALL:
+            console.log('entro');
+            state.listGeneral = action.payload;
+            break;
+        case TYPES.ADD_PRODUCT:
+            console.log('add product');
+            state.listCarrito.push(action.payload);
             break;
         default:
-            console.log(state);
+            console.log('default action');
             break;
 
     }

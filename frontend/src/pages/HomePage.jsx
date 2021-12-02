@@ -1,5 +1,4 @@
 import React from 'react'
-import { TYPES } from '../actions/action'
 import Search from '../components/Search'
 import Dashboard from '../components/Dashboard'
 

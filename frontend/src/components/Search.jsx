@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import React, {useContext } from 'react'
+=======
+import React from 'react'
+>>>>>>> 672edb1477d6928c425076bce0d6bf5bfb787730
 import { useSearchParams } from 'react-router-dom';
 import {shoppingContext} from '../context/shoppingContext'
 
@@ -8,75 +12,7 @@ const Search = () => {
 
     console.log(`state desde search`, state)
 
-    const quemados = [
-
-        {
-            "name": "Producto 1",
-            "price": 12.3,
-            "productCode": 0,
-            "description": "Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip",
-            "category": "1"
-
-        },
-        {
-            "name": "Producto 2",
-            "price": 123,
-            "productCode": 1,
-            "description": "Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip",
-            "category": "4"
-        },
-        {
-            "name": "Producto 3",
-            "price": 2.3,
-            "productCode": 2,
-            "description": "Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip",
-            "category": "mar"
-        },
-        {
-            "name": "Producto 4",
-            "price": 1.39,
-            "productCode": 3,
-            "description": "Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip",
-            "category": "asd"
-        },
-        {
-            "name": "Producto 5",
-            "price": 22.3,
-            "productCode": 4,
-            "description": "Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip",
-            "category": "fds"
-        },
-        {
-            "name": "Producto 6",
-            "price": 72.9,
-            "productCode": 5,
-            "description": "Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip",
-            "category": "1"
-        },
-        {
-            "name": "Producto 7",
-            "price": 92.1,
-            "productCode": 6,
-            "description": "Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip",
-            "category": "1"
-        },
-        {
-            "name": "Producto 8",
-            "price": 8.3,
-            "productCode": 7,
-            "description": "Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip",
-            "category": "1"
-        },
-        {
-            "name": "Producto 9",
-            "price": 63.5,
-            "productCode": 8,
-            "description": "Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip",
-            "category": "1"
-        }
-    ]
-
-
+    
     let [searchParams, setSearchParams] = useSearchParams();
     const handleChange = (e) => {
         let filter = e.target.value;

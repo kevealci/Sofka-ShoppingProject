@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import React, { useContext, useEffect } from 'react'
+=======
+import React, { useEffect } from 'react'
+>>>>>>> 672edb1477d6928c425076bce0d6bf5bfb787730
 import { useSearchParams } from 'react-router-dom';
 import { GetFetch } from '../hooks/GetFetch'
 import Card from './Card';
@@ -8,10 +12,14 @@ import { TYPES } from '../actions/Action';
 
 const Dashboard = () => {
 
+<<<<<<< HEAD
   const {state, dispatch} = useContext(shoppingContext)
 
   let [searchParams, setSearchParams] = useSearchParams();
   // const { data, error, loading } = GetFetch('https://jsonplaceholder.typicode.com/todos');
+=======
+  let [searchParams] = useSearchParams();
+>>>>>>> 672edb1477d6928c425076bce0d6bf5bfb787730
   const { data, error, loading } = GetFetch('http://localhost:8080/api/product');
 
   useEffect(() => {

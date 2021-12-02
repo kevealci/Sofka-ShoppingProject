@@ -14,9 +14,6 @@ const Dashboard = () => {
   const { data, error, loading } = GetFetch('http://localhost:8080/api/product');
 
   useEffect(() => {
-  }, [searchParams]);
-
-  useEffect(() => {
     dispatch({type:TYPES.GET_ALL, payload:data})
   }, [data, dispatch]);
 
@@ -43,6 +40,21 @@ const Dashboard = () => {
               <Card key={index} info={item} />
           ))
 
+      }
+      {
+        searchParams.get("filter") &&
+        <h1 className="title mt-3 text-align-center">Categoria</h1>
+      }
+      {
+        searchParams.get("filter") &&
+        state?.listaGeneral?.filter(item => {
+          let tt = item.category.toLowerCase();
+          let ff = searchParams.get("filter");
+          return tt.includes(ff)})
+          .map((item, index) => (
+            <Card key={index} info={item}/>
+          ))
+          
       }
     </div>
   )

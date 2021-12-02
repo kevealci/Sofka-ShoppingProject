@@ -2,9 +2,6 @@ import React from 'react'
 import { useSearchParams } from 'react-router-dom';
 
 const Search = () => {
-
-
-
     
     let [searchParams, setSearchParams] = useSearchParams();
     const handleChange = (e) => {
@@ -26,11 +23,7 @@ const Search = () => {
                     onChange={handleChange}
                 />
             </div>
-            <div className="row">
-                {
-
-                }
-            </div>
+            
         </>
     )
 }

@@ -1,7 +1,8 @@
-import React, { useState, useContext } from 'react'
+import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import { shoppingContext } from '../context/shoppingContext'
 import { TYPES } from '../actions/actions';
+import '../styles/card.css'
 
 const Card = ({ info }) => {
 
@@ -11,11 +12,9 @@ const Card = ({ info }) => {
         width: '18rem'
     };
 
-    const [flag, setFlag] = useState(false)
 
     const boton = (e) => {
         dispatch({ type: TYPES.ADD_PRODUCT, payload: info })
-        setFlag(!flag)
     }
 
     const setItem = () => {
@@ -25,7 +24,7 @@ const Card = ({ info }) => {
     return (
         <>
 
-       <div className="col-auto">
+       <div className="col-auto mt-3">
                 <div className="card" style={styles} >
 
                     <Link onClick={setItem} className="text-decoration-none" to={`/info`}>

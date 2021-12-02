@@ -1,11 +1,14 @@
-import React, { useEffect, useState, useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import { useSearchParams } from 'react-router-dom';
 import { GetFetch } from '../hooks/GetFetch'
 import Card from './Card';
-
+import {shoppingContext} from '../context/shoppingContext'
+import { TYPES } from '../actions/Action';
 
 
 const Dashboard = () => {
+
+  const {state, dispatch} = useContext(shoppingContext)
 
   let [searchParams, setSearchParams] = useSearchParams();
   // const { data, error, loading } = GetFetch('https://jsonplaceholder.typicode.com/todos');
@@ -15,6 +18,10 @@ const Dashboard = () => {
     console.log(searchParams.get("filter"));
   }, [searchParams]);
 
+  useEffect(() => {
+    dispatch({type:TYPES.GET_ALL, payload:data})
+  }, [data])
+
   if (loading) {
     return <h1>Loading...</h1>;
   }
@@ -23,12 +30,16 @@ const Dashboard = () => {
     return <h1>{error}</h1>;
   }
 
+  console.log(`data`, data)
+  
+  console.log(`state dashboard`, state)
+
 
   return (
     <div className="row">
       {
-
-        data.filter(item => {
+//data
+        state.listaGeneral.filter(item => {
           let tt = item.name.toLowerCase();
           let ff = searchParams.get("filter");
           if (!ff) return true;

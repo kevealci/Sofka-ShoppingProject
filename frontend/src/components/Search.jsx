@@ -1,7 +1,12 @@
-import React, { useState, useEffect, useContext } from 'react'
+import React, {useContext } from 'react'
 import { useSearchParams } from 'react-router-dom';
+import {shoppingContext} from '../context/shoppingContext'
 
-const Search = (props) => {
+const Search = () => {
+
+    const {state, dispatch} = useContext(shoppingContext)
+
+    console.log(`state desde search`, state)
 
     const quemados = [
 

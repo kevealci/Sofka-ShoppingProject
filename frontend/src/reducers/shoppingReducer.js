@@ -1,5 +1,4 @@
 import { TYPES } from '../actions/Action';
-//import { data } from '../dataQuemada';
 
 export const shoppingInitialState = {
   listaGeneral: [],

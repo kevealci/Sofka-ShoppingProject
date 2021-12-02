@@ -17,7 +17,7 @@ export const Footer = () => {
             <div className="d-flex justify-content-evenly">
                 <div className="row">
                     <div className="col col-6">
-                        <div className="btn btn-success" onClick={addProduct}>Agregar</div>
+                            <Button onClick={addProduct} classes={"btn btn-success"}>Agregar</Button>
                     </div>
                     <div className="col col-6">
                         <Link to="/">

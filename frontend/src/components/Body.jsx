@@ -1,6 +1,5 @@
 import React, {useContext} from 'react'
 import {Paragraph} from './Paragraph.jsx'
-import {Title} from './Title.jsx'
 import {shoppingContext} from '../context/shoppingContext'
 
 export const Body = () => {
@@ -9,13 +8,13 @@ export const Body = () => {
 
     return (
         <div className="col-7">                      
-            <Title>Descripción</Title>
+            <h4>Descripción</h4>
             <Paragraph>
                 {itemSeleccionado.description}
             </Paragraph>
-            <Title>Categoria</Title>
+            <h4>Categoria</h4>
             <Paragraph>{itemSeleccionado.category}</Paragraph>
-            <Title>Precio</Title>
+            <h4>Precio</h4>
             <Paragraph>{itemSeleccionado.price}</Paragraph>
         </div>    
     )

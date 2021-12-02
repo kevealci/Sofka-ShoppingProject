@@ -1,5 +1,4 @@
 import React, {useContext} from 'react'
-import { Image } from './Image'
 import { Body } from './Body'
 import { Footer } from './Footer';
 import { Paragraph } from './Paragraph.jsx'
@@ -18,7 +17,7 @@ export const PageDescription = () => {
             <hr />
             <div className="row">
                 <div className="col-5">
-                    <Image classes={"card-img-top"} src={itemSeleccionado.picture} />
+                    <img className={"card-img-top"} src={itemSeleccionado.picture} />
                     <Paragraph classes={"text-center"}>Codigo: {itemSeleccionado.productCode}</Paragraph>
                 </div>
                 <Body />

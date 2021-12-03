@@ -1,9 +1,9 @@
-import React from 'react'
+import React from 'react';
 
-export const Image = ({classes, src}) => {
-    return (
-        <>
-            <img src={src} className={classes} alt="..." />
-        </>
-    )
-}
+export const Image = ({ classes, src }) => {
+  return (
+    <>
+      <img src={src} className={classes} alt="..." />
+    </>
+  );
+};

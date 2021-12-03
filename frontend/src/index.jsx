@@ -7,6 +7,7 @@ import InformationCard from './Pages/InformationCard';
 import NoEncontrada from './components/Noencontrado';
 import { ShoppingProvider } from './components/ShoppingProvider';
 import { ShoppingCart } from './Pages/ShoppingCart';
+
 ReactDOM.render(
   <ShoppingProvider>
     <BrowserRouter>

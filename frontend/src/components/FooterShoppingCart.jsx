@@ -10,10 +10,7 @@ export const FooterShoppingCart = () => {
   const { state, dispatch } = useContext(shoppingContext);
 
   const confirmarCompra = () => {
-    console.log("state.item")
-    console.log(state.item)
-    if (state.item != "") {
-      console.log('entro if')
+    if (state.item !== "") {
       const body = {
         codeOrder: 12,
         orderList: state.listaCarrito,
@@ -39,7 +36,7 @@ export const FooterShoppingCart = () => {
       toast('Compra realizada exitosamente', { icon: '👏', })
     } else {
       dispatch({ type: TYPES.INITIAL_STATE, payload: shoppingInitialState });
-      toast.error('Compra Cancelada exitosamente');
+      toast.error('Compra Cancelada');
     }
 
   }
@@ -47,7 +44,7 @@ export const FooterShoppingCart = () => {
 
   const cancelarCompra = () => {
     dispatch({ type: TYPES.INITIAL_STATE, payload: shoppingInitialState });
-    toast.error('Compra Cancelada exitosamente');
+    toast.error('Compra Cancelada');
   };
 
   return (

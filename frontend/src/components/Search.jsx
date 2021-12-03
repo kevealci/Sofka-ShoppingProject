@@ -19,7 +19,7 @@ const Search = () => {
           type="text"
           className="form-control"
           placeholder="Recipient's username"
-          value={searchParams.get('filter')}
+          defaultValue={searchParams.get('filter')}
           onChange={handleChange}
         />
       </div>

@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import { TYPES } from '../actions/actions';
 import { shoppingContext } from '../context/shoppingContext';
 import { shoppingInitialState } from '../reducers/shoppingReducer';
+import toast, { Toaster } from 'react-hot-toast';
+
 
 export const FooterShoppingCart = () => {
   const { state, dispatch } = useContext(shoppingContext);
@@ -29,10 +31,12 @@ export const FooterShoppingCart = () => {
       .finally(() => {
         dispatch({ type: TYPES.INITIAL_STATE, payload: shoppingInitialState });
       });
+    toast('Compra realizada exitosamente', { icon: '👏', })
   };
 
   const cancelarCompra = () => {
     dispatch({ type: TYPES.INITIAL_STATE, payload: shoppingInitialState });
+    toast.success('Compra Cancelada exitosamente');
   };
 
   return (
@@ -61,6 +65,12 @@ export const FooterShoppingCart = () => {
           <span className="material-icons-outlined">highlight_off</span>
         </button>
       </Link>
+      <Toaster
+        toastOptions={{
+          duration: 1000
+        }} />
     </div>
+
+
   );
 };

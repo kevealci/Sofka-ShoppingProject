@@ -2,86 +2,86 @@
 
 
     {
-        "name": "Producto 1",
-        "price": 12.3,
+        "name": "Lavadora Carga Superior Whirlpool 18Kg 40Lbs Gris WWG18BSHLA",
+        "price": 1519000,
         "productCode": 0,
-        "description": "Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip",
-        "category": "1",
-        "picture": "https://i.ibb.co/9wwh34J/img1.jpg"
+        "description": "Capacidad 40 libras (18kg), Sistema de lavado Turbo Power, Inteldrive, 3D WaterfaLl y Intelicarga, 10 ciclos automáticos y 4 manuales, Canasta 100% acero inoxidable y Indicador LED de Tiempo Restante deL Ciclo",
+        "category": "Lavado y Secado",
+        "picture": "https://i.ibb.co/Tk98r5W/lavadora.jpg"
 
 
     },
     {
-        "name": "Producto 2",
-        "price": 123,
+        "name": "Nevera No Frost Mabe 250 Litros Grafito",
+        "price": 1449000,
         "productCode": 1,
-        "description": "Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip",
-        "category": "4",
-        "picture": "https://i.ibb.co/99yB1Bx/img2.jpg"
+        "description": "Capacidad 250 Litros Brutos, Iliminación LED, Tecnología Home Energy Saver, Clasificación Energética tipo B y Ahorra hasta un 56% de energía con el compresor Eco Advance",
+        "category": "Refrigeración",
+        "picture": "https://i.ibb.co/FwvJKVQ/nevera.jpg"
     },
     {
-        "name": "Producto 3",
-        "price": 2.3,
+        "name": "Estufa De Piso ABBA Majestic 4 Puestos Vidrio",
+        "price": 899000,
         "productCode": 2,
-        "description": "Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip",
-        "category": "mar",
-        "picture": "https://i.ibb.co/LvBtqcc/img3.jpg"
+        "description": "Mesa sellada en vidrio de seguridad, Calientaplatos (Asador [puerta inferior]), Horno a gas con aislamiento superior y lateral operado por termostato (con protección termoeléctrica), con luz interior (bombillo de 25W) y 2 parrillas en alambrón porcelanizado, Gratinador eléctrico de 1000W a 120 V/60 Hz con sensor térmico que evita el sobrecalentamiento del producto y Frente en vidrio de seguridad",
+        "category": "Cocina",
+        "picture": "https://i.ibb.co/HTpFcw0/estufa.jpg"
     },
     {
-        "name": "Producto 4",
-        "price": 1.39,
+        "name": "Horno Microondas Whirlpool 0.7Pies 700W",
+        "price": 325000,
         "productCode": 3,
-        "description": "Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip",
-        "category": "asd",
-        "picture": "https://i.ibb.co/PNKzq0x/img4.jpg"
+        "description": "Microondaa 0.7pc (20 litros) cuanta con 5 niveles de potencia, 4 opciones para descongelar y 12 opciones de autococción. Con función Mantener Caliente, Autolimpieza, Modo Ahorro de Energía. Pantalla y control digital con LED, y plato giratorio. Modalidad Eco Satandby, Función Autolimpieza, Display LED Verde y Función Mantener Caliente",
+        "category": "Cocina",
+        "picture": "https://i.ibb.co/kKWNxr3/micro.png"
     },
     {
-        "name": "Producto 5",
-        "price": 22.3,
+        "name": "Cubierta Vidrio Abba 4Pts Gp Ea Pe 2P Negro",
+        "price": 865000,
         "productCode": 4,
-        "description": "Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip",
-        "category": "fds",
-        "picture": "https://i.ibb.co/PNKzq0x/img4.jpg"
+        "description": "Mesa en vidrio con 4 quemadores, 2 parrillas dobles en hierro fundido, Quemador triple corona para cocción eficiente y rápida, Encendido automático oprimiendo las perillas",
+        "category": "Cocina",
+        "picture": "https://i.ibb.co/4jkgHyt/cubierta.jpg"
     },
     {
-        "name": "Producto 6",
-        "price": 72.9,
+        "name": "Cafetera Oster 4 Tazas Negra",
+        "price": 102000,
         "productCode": 5,
-        "description": "Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip",
-        "category": "1",
-        "picture": "https://i.ibb.co/0nPTRxQ/img5.jpg"
+        "description": "Luz indicadora de encendido y apagado permite saber si la cafetera está encendida o apagada, La canasta removible facilita su llenado y limpieza, La función de pausa para servir permite servir café durante el proceso de colado, Las ventanillas dobles muestran la cantidad de agua que se encuentra en el tanque para llenarlo con precisión, El espacio para almacenar el cable permite guardar el excedente de forma segura para mantener el mostrador organizado y incluye filtro permanente lavable",
+        "category": "Cocina",
+        "picture": "https://i.ibb.co/FHjGxcm/cafetera.png"
     },
     {
-        "name": "Producto 7",
-        "price": 92.1,
+        "name": "Aire Acondicionado Midea Mini Split 9000",
+        "price": 1449000,
         "productCode": 6,
-        "description": "Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip",
-        "category": "1",
-        "picture": "https://i.ibb.co/xLYsXR4/img9.jpg"
+        "description": "Compresor Inverter: ahorra hasta 70% de energía, Modo Eco: Ahorro adicional de energía, Refrigerante R410a, Acabado Golden Fin: protege el condensador de la corrosión, Diseño Diamante: condensadora más resistente, Auto ajuste nocturno: noches más agradables y Sensor sígueme: la temperatura perfecta siempre al alcance de tu mano",
+        "category": "Climatización",
+        "picture": "https://i.ibb.co/F4QdjtP/air.jpg"
     },
     {
-        "name": "Producto 8",
-        "price": 8.3,
+        "name": "Televisor Samsung 65 pulgadas LED UHD 4K Smart Tv",
+        "price": 2859000,
         "productCode": 7,
-        "description": "Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip",
-        "category": "1",
-        "picture": "https://i.ibb.co/nMVqfWH/img8.jpg"
+        "description": "Pantalla LED 65 pulgadas (164 cm), Resolución 4K UHD (3840 x 2160), Tecnología Smart, Sistema operativo Tizen™, Conexión Bluetooth y Sintonizador DVB-T2",
+        "category": "Tecnologia",
+        "picture": "https://i.ibb.co/Ct6khCS/tele.jpg"
     },
     {
-        "name": "Producto 9",
-        "price": 63.5,
+        "name": "Portátil HP 15 pulgadas Core I3 ",
+        "price": 2222000,
         "productCode": 8,
-        "description": "Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip",
-        "category": "1",
-        "picture": "https://i.ibb.co/FVv9JXP/img6.jpg"
+        "description": "Portátil HP de 15,6 pulgadas, Intel® Core™ i3 - 10110U de 10.ª generación, Resolución HD (1366 x 768) 16:9, RAM 4GB, Disco Duro 1TB y Windows 10 Home 64",
+        "category": "Tecnologia",
+        "picture": "https://i.ibb.co/cyTW8z4/compu.png"
     },
     {
-        "name": "Producto 10",
-        "price": 993.5,
+        "name": "Parlante Steren 15 pulgadas",
+        "price": 690000,
         "productCode": 9,
-        "description": "Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip",
-        "category": "1",
-        "picture": "https://i.ibb.co/WB9DQP9/img7.jpg"
+        "description": "Potencia 2800 WPMPO, Entrada para micrófono (6,3 mm); entrada auxiliar (RCA) para otros reproductores, Reproductor MP3 por microSD y Consumo nominal: 180 W/h.",
+        "category": "Tecnologia",
+        "picture": "https://i.ibb.co/xXsjSTx/bafle.jpg"
     }
 
     

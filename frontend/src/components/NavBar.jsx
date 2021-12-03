@@ -8,7 +8,7 @@ export const Navbar = () => {
   return (
     <nav className="navbar navbar-dark bg-dark container-fluid sticky-sm-top">
       <NavLink className="btn btn-outline-primary navbar-brand" to="/">
-        Shopping
+        Shofka
       </NavLink>
 
       <button type="button" className="btn btn-dark position-relative me-3 mt-2">

@@ -20,19 +20,29 @@ En este repositoria se encuentra el proyecto realizado para la presentación del
 
 ## Resumen
 
-1. Mostrar tarjetas
-   1. Agregar
-2. Buscar
-3. Informacion
+1. Mostrar tarjetas (HomePage)
+
+   1. Agregar y buscar
+
+   ![index](https://github.com/kevealci/Sofka-ShoppingProject/blob/main/assets/1.gif)
+
+2. Informacion
+
    1. Agregar
    2. Regresar
-4. Carrito compras
+
+   ![index](https://github.com/kevealci/Sofka-ShoppingProject/blob/main/assets/2.gif)
+
+3. Carrito compras
+
    1. Ver detalles
    2. Eliminar item
    3. Confirmar compra
    4. Cancelar  compra
 
-![index](https://github.com/kevealci/Sofka-ShoppingProject/blob/main/assets/1.gif)
+![index](https://github.com/kevealci/Sofka-ShoppingProject/blob/main/assets/3.gif)
+
+
 
 
 

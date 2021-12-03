@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import { shoppingContext } from '../context/shoppingContext'
 import { TYPES } from '../actions/actions';
+import toast, { Toaster } from 'react-hot-toast';
 import '../styles/card.css'
 
 const Card = ({ info }) => {
@@ -15,6 +16,7 @@ const Card = ({ info }) => {
 
     const boton = (e) => {
         dispatch({ type: TYPES.ADD_PRODUCT, payload: info })
+        toast.success('Producto agregado');
     }
 
     const setItem = () => {
@@ -24,7 +26,7 @@ const Card = ({ info }) => {
     return (
         <>
 
-       <div className="col-auto mt-3">
+            <div className="col-auto mt-3">
                 <div className="card" style={styles} >
 
                     <Link onClick={setItem} className="text-decoration-none" to={`/info`}>
@@ -38,8 +40,14 @@ const Card = ({ info }) => {
                         <li className="btn btn-success" onClick={boton}>AGREGAR</li>
                     </ul>
                 </div>
+                <Toaster
+                    toastOptions={{
+                        // Define default options
+                        duration: 1000
+                    }}
+                />
             </div>
-           
+
         </>
     );
 }

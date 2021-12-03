@@ -2,6 +2,7 @@ import { useContext, useState, useEffect } from "react"
 import { shoppingContext } from "../context/shoppingContext"
 import { TYPES } from '../actions/actions'
 import { Link } from "react-router-dom"
+import toast, { Toaster } from 'react-hot-toast';
 
 export const Cart = () => {
 
@@ -15,16 +16,17 @@ export const Cart = () => {
 
   const deleteProduct = (item) => {
     let nuevaLista = listaCarrito.filter(elemento => elemento.id !== item.id);
-    dispatch({ type: TYPES.DELETE_PRODUCT, payload: nuevaLista});
+    dispatch({ type: TYPES.DELETE_PRODUCT, payload: nuevaLista });
+    toast.success('Producto Eliminado');
   }
 
-  useEffect(() =>{
-    let totalValue=0;
-    for(let i of listaCarrito){
-      totalValue+=i.price;
+  useEffect(() => {
+    let totalValue = 0;
+    for (let i of listaCarrito) {
+      totalValue += i.price;
     }
     setTotal(totalValue);
-  },[listaCarrito]  )
+  }, [listaCarrito])
 
   return (
     <div className="container">
@@ -63,10 +65,16 @@ export const Cart = () => {
                   <button
                     type="button"
                     className="btn btn-danger"
-                    onClick={()=>deleteProduct(item)}
+                    onClick={() => deleteProduct(item)}
                   >
                     <span className="material-icons-outlined">delete </span>
                   </button>
+                  <Toaster
+                    toastOptions={{
+                      // Define default options
+                      duration: 1000
+                    }}
+                  />
                 </td>
               </tr>
             })

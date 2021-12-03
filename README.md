@@ -32,7 +32,7 @@ En este repositoria se encuentra el proyecto realizado para la presentación del
    3. Confirmar compra
    4. Cancelar  compra
 
-![index](D:\Sofka\FullStack\codigo\Sofka-ShoppingProject\assets\1.gif)
+![index](https://github.com/kevealci/Sofka-ShoppingProject/blob/main/assets/1.gif)
 
 
 

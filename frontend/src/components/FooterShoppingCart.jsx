@@ -31,12 +31,13 @@ export const FooterShoppingCart = () => {
       .finally(() => {
         dispatch({ type: TYPES.INITIAL_STATE, payload: shoppingInitialState });
       });
-    toast('Compra realizada exitosamente', { icon: '👏', })
+      
+      toast('Compra realizada exitosamente', { icon: '👏', })
   };
 
   const cancelarCompra = () => {
     dispatch({ type: TYPES.INITIAL_STATE, payload: shoppingInitialState });
-    toast.success('Compra Cancelada exitosamente');
+    toast.error('Compra Cancelada exitosamente');
   };
 
   return (

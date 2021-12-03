@@ -2,6 +2,7 @@ import { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { TYPES } from '../actions/actions';
 import { shoppingContext } from '../context/shoppingContext';
+import toast, { Toaster } from 'react-hot-toast';
 
 export const CartItem = ({ key, item }) => {
   const {
@@ -16,6 +17,7 @@ export const CartItem = ({ key, item }) => {
   const deleteProduct = (item) => {
     let nuevaLista = listaCarrito.filter((elemento) => elemento.id !== item.id);
     dispatch({ type: TYPES.DELETE_PRODUCT, payload: nuevaLista });
+    toast.error('Producto Eliminado');
   };
 
   return (
@@ -42,6 +44,11 @@ export const CartItem = ({ key, item }) => {
         <button type="button" className="btn btn-danger" onClick={() => deleteProduct(item)}>
           <span className="material-icons-outlined">delete </span>
         </button>
+        <Toaster
+          toastOptions={{
+            duration: 1000
+          }}
+        />
       </td>
     </tr>
   );

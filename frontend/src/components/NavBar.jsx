@@ -6,7 +6,7 @@ export const Navbar = () => {
     state: { listaCarrito }
   } = useContext(shoppingContext);
   return (
-    <nav className="navbar navbar-dark bg-dark container-fluid">
+    <nav className="navbar navbar-dark bg-dark container-fluid sticky-sm-top">
       <NavLink className="btn btn-outline-primary navbar-brand" to="/">
         Shopping
       </NavLink>

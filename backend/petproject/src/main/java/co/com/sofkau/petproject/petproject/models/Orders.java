@@ -12,7 +12,6 @@ public class Orders {
     @Id
     private String id;
 
-    @Indexed(unique=true)
     private Long CodeOrder;
 
     private String userName;

@@ -21,7 +21,6 @@ public class Product {
                 '}';
     }
 
-    @Indexed(unique=true)
     private Long productCode;
 
     private String name;

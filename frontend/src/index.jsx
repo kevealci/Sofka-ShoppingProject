@@ -2,11 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import App from './App';
-import HomePage from './pages/HomePage';
-import InformationCard from './pages/InformationCard';
+import HomePage from './Pages/HomePage';
+import InformationCard from './Pages/InformationCard';
 import NoEncontrada from './components/Noencontrado';
 import { ShoppingProvider } from './components/ShoppingProvider';
-import { ShoppingCart } from './pages/ShoppingCart';
+import { ShoppingCart } from './Pages/ShoppingCart';
 ReactDOM.render(
   <ShoppingProvider>
     <BrowserRouter>

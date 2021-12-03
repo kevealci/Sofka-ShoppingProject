@@ -6,7 +6,7 @@ import HomePage from './Pages/HomePage';
 import InformationCard from './Pages/InformationCard';
 import NoEncontrada from './components/Noencontrado';
 import { ShoppingProvider } from './components/ShoppingProvider';
-import { ShoppingCart } from './Pages/ShoppingCart';
+import { ShoppingCart } from './pages/ShoppingCart';
 ReactDOM.render(
   <ShoppingProvider>
     <BrowserRouter>

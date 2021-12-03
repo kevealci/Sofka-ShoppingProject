@@ -4,7 +4,7 @@ export const shoppingInitialState = {
   listaGeneral: [],
   listaCarrito: [],
   itemSeleccionado: {},
-  item: {}
+  item: ""
 };
 
 export function shoppingReducer(state, action) {

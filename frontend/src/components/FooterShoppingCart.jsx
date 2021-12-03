@@ -10,30 +10,40 @@ export const FooterShoppingCart = () => {
   const { state, dispatch } = useContext(shoppingContext);
 
   const confirmarCompra = () => {
-    const body = {
-      codeOrder: 12,
-      orderList: state.listaCarrito,
-      userName: state.item
-    };
+    console.log("state.item")
+    console.log(state.item)
+    if (state.item != "") {
+      console.log('entro if')
+      const body = {
+        codeOrder: 12,
+        orderList: state.listaCarrito,
+        userName: state.item
+      };
 
-    const URL = 'http://localhost:8080/api/order';
+      const URL = 'http://localhost:8080/api/order';
 
-    fetch(URL, {
-      method: 'POST',
-      body: JSON.stringify(body),
-      headers: {
-        'Content-Type': 'application/json'
-      }
-    })
-      .then((response) => response.json())
-      .then((todo) => todo)
-      .catch((err) => console.error(err))
-      .finally(() => {
-        dispatch({ type: TYPES.INITIAL_STATE, payload: shoppingInitialState });
-      });
-      
+      fetch(URL, {
+        method: 'POST',
+        body: JSON.stringify(body),
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      })
+        .then((response) => response.json())
+        .then((todo) => todo)
+        .catch((err) => console.error(err))
+        .finally(() => {
+          dispatch({ type: TYPES.INITIAL_STATE, payload: shoppingInitialState });
+        });
+
       toast('Compra realizada exitosamente', { icon: '👏', })
-  };
+    } else {
+      dispatch({ type: TYPES.INITIAL_STATE, payload: shoppingInitialState });
+      toast.error('Compra Cancelada exitosamente');
+    }
+
+  }
+
 
   const cancelarCompra = () => {
     dispatch({ type: TYPES.INITIAL_STATE, payload: shoppingInitialState });
